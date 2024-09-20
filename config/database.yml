@@ -25,10 +25,7 @@ default: &default
 development:
   <<: *default
   database: rails_template_development
-  host: localhost
-  port: 5432
-  username: postgres
-  password:
+  
  
 
   # The specified database role being used to connect to postgres.

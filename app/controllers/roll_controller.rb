@@ -7,8 +7,8 @@ class RollController < ApplicationController
 
   def roll_dice
 
-    @num_dice=params.fetch("number_of_dice")
-    @sides=params.fetch("sides")
+    @num_dice=params.fetch("number_of_dice").to_i
+    @sides=params.fetch("sides").to_i
     @rolls=[]
 
     @num_dice.do 
